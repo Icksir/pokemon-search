@@ -14,17 +14,21 @@
     <img id="pokemon-logo" src="./images/pokemon_logo.png" alt="pokemon-logo" />
     <h1>Pokédex</h1>
     <div id="pokedex-navigation">
-      <div>
-        <input id="buscador" type="search" placeholder="¡Busca tu pokemon!" class="botones">
-        <button role="button" id="enviar" class="botones" style="margin-bottom: 10px;">Enviar</button>
-      </div>
+      <div style="padding-bottom: 10px;">
+        <input id="buscador" type="text" placeholder="¡Busca tu pokemon!" value="" class="botones">
+        <select id="tipo-pokemon" aria-placeholder="Tipo de pokemon" class="botones">
+          <option value="pokemon">Normal</option>
+          <option value="shiny">Shiny</option>
+        </select>
+      </div> 
+      <button role="button" id="enviar" class="botones" style="margin-bottom: 10px;">Enviar</button><br>
       <button role="button" id="anterior" class="botones">Anterior</button>
       <button role="button" id="siguiente" class="botones">Siguiente</button>
     </div>
 
     <div id="pokemon-data">
       <p id="nombre"></p>
-      <img id="pokemon-image" src="" alt="pokemon-image"/>
+      <img id="pokemon-image" src="" alt="Imagen no disponible :-("/>
     </div>
   </div>
 
